@@ -17,18 +17,32 @@ export default function Card({props}) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'gray',
-    flex:1,
-    marginHorizontal:3,
-    marginVertical:3
+    backgroundColor: "rgb(236, 239, 241)",
+    flex: 1,
+    marginHorizontal: 3,
+    marginVertical: 3,
+
   },
   image: {
-      alignSelf:'center',
-      marginTop:5,
-      width:100,
-      height:100
+    alignSelf: "center",
+    marginTop: 10,
+    width: 100,
+    height: 100,
   },
   name: {
-    justifyContent:'center'
-  }
-})
+    textAlign: "center",
+    color: "#000000",
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlignVertical: "center",
+    alignContent: "center",
+  },
+  price: {
+    alignSelf: "center",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlignVertical: "center",
+    alignContent: "center",
+  },
+});

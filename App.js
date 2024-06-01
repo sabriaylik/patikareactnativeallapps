@@ -24,23 +24,22 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-
-  },
+  container: {},
   title: {
-    marginLeft:25,
-    marginTop:25,
-    fontSize : 40,
-    fontWeight:'bold'
+    marginLeft: 25,
+    marginTop: 25,
+    fontSize: 40,
+    fontWeight: "bold",
+    color: "#f0f",
   },
   search: {
-    marginHorizontal:15,
-    backgroundColor:'gray',
-    color: 'yellow',
-    borderRadius:10,
-    paddingHorizontal:10,
-    paddingVertical:10
-  }
+    marginHorizontal: 15,
+    backgroundColor: "rgb(236, 239, 241)",
+    color: "yellow",
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+  },
 });
 
 
@@ -52,17 +51,57 @@ const DATA = [
     price: 5000,
   },
   {
-    image: "./assets/resim1.png",
+    image: "./assets/resim2.png",
     name: "Table",
     price: 3000,
   },
   {
-    image: "./assets/resim1.png",
+    image: "./assets/resim3.png",
     name: "Kitap",
     price: 500,
   },
   {
+    image: "./assets/resim4.png",
+    name: "Araba",
+    price: 20000,
+  },
+  {
     image: "./assets/resim1.png",
+    name: "Telefon",
+    price: 5000,
+  },
+  {
+    image: "./assets/resim2.png",
+    name: "Table",
+    price: 3000,
+  },
+  {
+    image: "./assets/resim3.png",
+    name: "Kitap",
+    price: 500,
+  },
+  {
+    image: "./assets/resim4.png",
+    name: "Araba",
+    price: 20000,
+  },
+  {
+    image: "./assets/resim1.png",
+    name: "Telefon",
+    price: 5000,
+  },
+  {
+    image: "./assets/resim2.png",
+    name: "Table",
+    price: 3000,
+  },
+  {
+    image: "./assets/resim3.png",
+    name: "Kitap",
+    price: 500,
+  },
+  {
+    image: "./assets/resim4.png",
     name: "Araba",
     price: 20000,
   },
