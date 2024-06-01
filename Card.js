@@ -6,8 +6,15 @@ import { SafeAreaView, StyleSheet, Text, TextInput, View, Image } from "react-na
 
 export default function Card({props}) {
   return (
-    <View style = {styles.container}> 
-      <Image source={require("./assets/resim1.png")} style= {styles.image}  />
+    <View style={styles.container}>
+      {/* <Image source={require("./assets/resim1.png")} style={styles.image} /> */}
+      {/* <Image source={props.image} style={styles.image} /> */}
+      {/* <Image source={require(props.image)} style={styles.image} /> */}
+      <Image
+        source={{ uri: props.image }}
+        style={styles.image}
+      />
+
       <Text style={styles.name}>{props.name}</Text>
       <Text style={styles.price}>{props.price}</Text>
     </View>

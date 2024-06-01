@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { FlatList, SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native';
 import Card from './Card';
+import products_data from "./data.json";
 
 
 
@@ -15,8 +16,11 @@ export default function App() {
       {/* <Card props={{ name: "Kulaklık", price: 1000 }} />
       <Card props={{ name: "Telefon", price: 1234 }} /> */}
 
-      <FlatList numColumns='2' data={DATA}  renderItem={({item})  => <Card props={item} />   } />
-
+      <FlatList
+        numColumns="2"
+        data={products_data}
+        renderItem={({ item }) => <Card props={item} />}
+      />
 
       <StatusBar style="auto" />
     </SafeAreaView>
@@ -44,65 +48,3 @@ const styles = StyleSheet.create({
 
 
 
-const DATA = [
-  {
-    image: "./assets/resim1.png",
-    name: "Telefon",
-    price: 5000,
-  },
-  {
-    image: "./assets/resim2.png",
-    name: "Table",
-    price: 3000,
-  },
-  {
-    image: "./assets/resim3.png",
-    name: "Kitap",
-    price: 500,
-  },
-  {
-    image: "./assets/resim4.png",
-    name: "Araba",
-    price: 20000,
-  },
-  {
-    image: "./assets/resim1.png",
-    name: "Telefon",
-    price: 5000,
-  },
-  {
-    image: "./assets/resim2.png",
-    name: "Table",
-    price: 3000,
-  },
-  {
-    image: "./assets/resim3.png",
-    name: "Kitap",
-    price: 500,
-  },
-  {
-    image: "./assets/resim4.png",
-    name: "Araba",
-    price: 20000,
-  },
-  {
-    image: "./assets/resim1.png",
-    name: "Telefon",
-    price: 5000,
-  },
-  {
-    image: "./assets/resim2.png",
-    name: "Table",
-    price: 3000,
-  },
-  {
-    image: "./assets/resim3.png",
-    name: "Kitap",
-    price: 500,
-  },
-  {
-    image: "./assets/resim4.png",
-    name: "Araba",
-    price: 20000,
-  },
-];
